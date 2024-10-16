@@ -31,7 +31,7 @@ export default function Footer() {
 	return (
 		<footer className='bg-gray-100 dark:bg-gray-800 py-8'>
 			<div className='container mx-auto px-4'>
-				<div className='flex flex-col md:flex-row justify-between items-center'>
+				<div className='flex flex-col md:flex-row justify-center items-center'>
 					<div className=''>
 						<p>
 							{content[language].madeWithLove}

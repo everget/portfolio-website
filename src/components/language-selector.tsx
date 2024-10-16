@@ -37,13 +37,13 @@ export default function LanguageSelector() {
 					<span className='ml-2 text-lg'>{flags[language]}</span>
 				</Button>
 			</PopoverTrigger>
-			<PopoverContent className='w-[200px] p-0'>
-				<div className='grid gap-2 p-2'>
+			<PopoverContent className='w-[200px] p-0' align='end'>
+				<div className='grid gap-2 p-2 '>
 					{Object.entries(languageNames).map(([code, name]) => (
 						<Button
 							key={code}
 							variant='ghost'
-							className='w-full'
+							className='w-full justify-start'
 							onClick={() => handleLanguageChange(code as Language)}
 						>
 							<Image
