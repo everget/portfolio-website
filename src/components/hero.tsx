@@ -1,7 +1,7 @@
 'use client';
 
-import { type TranslationsObject, useLanguage } from '@/components/language-provider';
 import { Button } from '@/components/ui/button';
+import { type TranslationsObject, useLanguage } from '@/providers/language-provider';
 import Image from 'next/image';
 
 export default function Hero() {

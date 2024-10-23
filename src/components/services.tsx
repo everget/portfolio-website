@@ -1,7 +1,7 @@
 'use client';
 
-import { useLanguage } from '@/components/language-provider';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { useLanguage } from '@/providers/language-provider';
 import { Code, Layers, Server } from 'lucide-react';
 
 const servicesData = [

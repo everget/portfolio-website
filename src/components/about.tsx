@@ -1,7 +1,7 @@
 'use client';
 
-import { useLanguage } from '@/components/language-provider';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/providers/language-provider';
 import { Download } from 'lucide-react';
 
 export default function About() {

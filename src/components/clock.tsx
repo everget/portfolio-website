@@ -1,6 +1,6 @@
 'use client';
 
-import { type TranslationsObject, useLanguage } from '@/components/language-provider';
+import { type TranslationsObject, useLanguage } from '@/providers/language-provider';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 

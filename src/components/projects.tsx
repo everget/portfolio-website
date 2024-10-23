@@ -1,12 +1,8 @@
 'use client';
 
-import {
-	type Language,
-	type TranslationsObject,
-	useLanguage,
-} from '@/components/language-provider';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { type Language, type TranslationsObject, useLanguage } from '@/providers/language-provider';
 import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 
@@ -19,42 +15,21 @@ export interface IProjectData {
 	githubLink: string;
 }
 
-// {
-// 	title: {
-// 		en: '',
-// 		es: '',
-// 		pt: '',
-// 		ru: '',
-// 		ua: '',
-// 	},
-// 	description: {
-// 		en: '',
-// 		es: '',
-// 		pt: '',
-// 		ru: '',
-// 		ua: '',
-// 	},
-// 	image: '/placeholder-300x200.svg',
-// 	techstack: [],
-// 	liveLink: '',
-// 	githubLink: '',
-// }
-
 const projectsData: IProjectData[] = [
 	{
 		title: {
-			en: 'Portfolio Website',
-			es: '',
-			pt: '',
-			ru: '',
-			ua: '',
+			en: 'Portfolio Website (you are here)',
+			es: 'Sitio Web de Portafolio (estás aquí)',
+			pt: 'Website de Portfólio (você está aqui)',
+			ru: 'Портфолио (вы здесь)',
+			ua: 'Портфоліо (ви тут)',
 		},
 		description: {
 			en: 'A little recursion to spice up your UX :)',
-			es: '',
-			pt: '',
-			ru: '',
-			ua: '',
+			es: 'Un poco de recursividad para mejorar tu experiencia de usuario :)',
+			pt: 'Um pouco de recursividade para apimentar sua experiência do usuário :)',
+			ru: 'Немного рекурсии для, чтобы освежить ваш UX :)',
+			ua: 'Трохи рекурсії, щоб оживити ваш UX :)',
 		},
 		image: '/projects/portfolio-website.png',
 		techstack: [
@@ -72,17 +47,17 @@ const projectsData: IProjectData[] = [
 	{
 		title: {
 			en: 'Advanced To-Do List',
-			es: '',
-			pt: '',
-			ru: '',
-			ua: '',
+			es: 'Lista de Tareas Avanzada',
+			pt: 'Lista de Tarefas Avançada',
+			ru: 'Расширенный список дел',
+			ua: 'Розширений список справ',
 		},
 		description: {
 			en: 'A To-Do list app with some additional functionality',
-			es: '',
-			pt: '',
-			ru: '',
-			ua: '',
+			es: 'Una aplicación de lista de tareas con funcionalidad adicional',
+			pt: 'Um aplicativo de lista de tarefas com funcionalidades adicionais',
+			ru: 'Приложение для списка дел с дополнительными функционалом',
+			ua: 'Додаток для списку справ з додатковими функціями',
 		},
 		image: '/projects/todolist.png',
 		techstack: [
@@ -102,17 +77,17 @@ const projectsData: IProjectData[] = [
 	{
 		title: {
 			en: 'Space Invaders Game',
-			es: '',
-			pt: '',
-			ru: '',
-			ua: '',
+			es: 'Juego Space Invaders',
+			pt: 'Jogo Space Invaders',
+			ru: 'Игра Space Invaders',
+			ua: 'Гра Space Invaders',
 		},
 		description: {
 			en: 'My test task to join TradingView (May of 2017)',
-			es: '',
-			pt: '',
+			es: 'Mi tarea de prueba para unirme a TradingView (Mayo de 2017)',
+			pt: 'Minha tarefa de teste para ingressar no TradingView (Maio de 2017)',
 			ru: 'Тестовое задание TradingView (Май 2017)',
-			ua: '',
+			ua: 'Моє тестове завдання для приєднання до TradingView (Травень 2017)',
 		},
 		image: '/projects/space-invaders.png',
 		techstack: [
@@ -129,17 +104,17 @@ const projectsData: IProjectData[] = [
 	{
 		title: {
 			en: 'Securities Portfolio Calculator',
-			es: '',
-			pt: '',
+			es: 'Calculadora de cartera de valores',
+			pt: 'Calculadora de carteira de valores mobiliários',
 			ru: 'Калькулятор портфеля ценных бумаг',
-			ua: '',
+			ua: 'Калькулятор портфеля цінних паперів',
 		},
 		description: {
 			en: 'My test task to join eSignal (May of 2016)',
-			es: '',
-			pt: '',
+			es: 'Mi tarea de prueba para unirme a eSignal (Mayo de 2016)',
+			pt: 'Minha tarefa de teste para ingressar no eSignal (Maio de 2016)',
 			ru: 'Тестовое задание eSignal (Май 2016)',
-			ua: '',
+			ua: 'Моє тестове завдання для приєднання до eSignal (Травень 2016)',
 		},
 		image: '/projects/securities-portfolio-calculator.png',
 		techstack: [
@@ -203,7 +178,7 @@ const projectsData: IProjectData[] = [
 	//         ua: '',
 	//     },
 	//     description: {
-	//         en: 'Calculator with virtual keyboard',
+	//         en: 'Calculator with keyboard shortcuts',
 	//         es: '',
 	//         pt: '',
 	//         ru: '',
@@ -284,6 +259,27 @@ const projectsData: IProjectData[] = [
 	// 	liveLink: '',
 	// 	githubLink: '',
 	// },
+
+	// {
+	// 	title: {
+	// 		en: '',
+	// 		es: '',
+	// 		pt: '',
+	// 		ru: '',
+	// 		ua: '',
+	// 	},
+	// 	description: {
+	// 		en: '',
+	// 		es: '',
+	// 		pt: '',
+	// 		ru: '',
+	// 		ua: '',
+	// 	},
+	// 	image: '/placeholder-300x200.svg',
+	// 	techstack: [],
+	// 	liveLink: '',
+	// 	githubLink: '',
+	// }
 ];
 
 export default function Projects() {

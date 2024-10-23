@@ -1,6 +1,6 @@
 'use client';
 
-import { type TranslationsObject, useLanguage } from '@/components/language-provider';
+import { type TranslationsObject, useLanguage } from '@/providers/language-provider';
 
 export default function Footer() {
 	const { language } = useLanguage();

@@ -1,7 +1,7 @@
 'use client';
 
 import Clock from '@/components/clock';
-import { type TranslationsObject, useLanguage } from '@/components/language-provider';
+import { type TranslationsObject, useLanguage } from '@/providers/language-provider';
 import Image from 'next/image';
 
 export default function Contact() {

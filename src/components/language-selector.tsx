@@ -1,8 +1,8 @@
 'use client';
 
-import { type Language, languageNames, useLanguage } from '@/components/language-provider';
 import { Button } from '@/components/ui/button';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { type Language, languageNames, useLanguage } from '@/providers/language-provider';
 import Image from 'next/image';
 import { useState } from 'react';
 
